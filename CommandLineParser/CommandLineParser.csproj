@@ -1,7 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>4.0.0</Version>
+    <Authors>Jakub Maly,Stef Heyenrath,NTTAKR</Authors>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/j-maly/CommandLineParser/master/LICENCE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/j-maly/CommandLineParser</PackageProjectUrl>
+    <Description>CommandLine Parser Library lets you easily define strongly typed command line arguments, allows automatic parsing of command line arguments and mapping the values to properites of your objects.</Description>
+    <PackageTags>commandline parse validate args arguments</PackageTags>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>False</DelaySign>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Reflection.TypeExtensions" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
+  </ItemGroup>
 
 </Project>
